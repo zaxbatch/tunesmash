@@ -1,24 +1,52 @@
 import React from 'react';
-import * as ROUTES from '../../constants/routes';
 import { Link } from 'react-router-dom';
+
+// const Navigation = () => (
+// 	<div>
+// 		<h1>Nav</h1>
+// 		<ul>
+// 			<li>
+// 				<Link to={'/'}>Landing</Link>
+// 			</li>
+// 			<li>
+// 				<Link to={'/signin'}>Sign In</Link>
+// 			</li>
+// 			<li>
+// 				<Link to={'/account'}>Account</Link>
+// 			</li>
+// 			<li>
+// 				<Link to={'/admin'}>Admin</Link>
+// 			</li>
+// 		</ul>
+// 	</div>
+// );
 
 const Navigation = () => (
 	<div>
+		<h2>Nav</h2>
 		<ul>
 			<li>
-				<Link to={ROUTES.LANDING}>Landing</Link>
+				<a href={'/'}>Landing</a>
 			</li>
 			<li>
-				<Link to={ROUTES.SIGN_IN}>Sign In</Link>
+				<a href={'/signin'}>Sign In</a>
 			</li>
 			<li>
-				<Link to={ROUTES.ACCOUNT}>Account</Link>
+				<a href={'/signup'}>Sign Up</a>
 			</li>
 			<li>
-				<Link to={ROUTES.ADMIN}>Admin</Link>
+				<a href={'/account'}>Account</a>
+			</li>
+			<li>
+				<a href={'/admin'}>Admin</a>
+			</li>
+			<li>
+				<a href={'/pw-forget'}>Forget Password</a>
+			</li>
+			<li>
+				<a href={'/pw-change'}>Change Password</a>
 			</li>
 		</ul>
 	</div>
 );
-
 export default Navigation;
